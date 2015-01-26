@@ -1,1 +1,24 @@
+<div class="container">
+  <div class="input">
+    {{textarea placeholder="Add a title!" value=noteTitle rows="2" cols="8"}}
+    {{textarea placeholder="Add a note!" value=noteCopy rows="8" cols="40"}}
+    <button {{action 'newNote'}}>Add a note</button>
+  </div>
+
+  <div class="output">
+    {{noteCopy}}
+  </div>
+
+
+
+<!-- <br><br><br><br><br><br><br><br><br> -->
+<div class="saved">
+    <h2>Notes</h2>
+    {{#each}}
+      <li>{{title}}{{body}} <button {{action 'deleteNote' id}}>Delete a note</button></li>
+    {{/each}}
+</div>
+  </div>
+
+
 {{outlet}}

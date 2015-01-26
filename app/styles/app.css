@@ -1,3 +1,110 @@
+*,:after,:before{
+  box-sizing:border-box
+}
+
 html, body {
   margin: 20px;
+/*   display: inline; */
+/*   background:#222; */
+/*   color:#fff; */
+/*   font-family: "Open Sans"; */
 }
+/* 
+.input {
+  background-color: white;
+  margin: 30px;
+  font-size: 20px;
+  float: left;
+  display: inline;
+  width:40%;
+  border: none;
+}
+
+.output {
+  background-color: white;
+  margin: 30px;
+  display: inline;
+  float: left;
+  width:40%;
+  font-size: 20px;
+}
+
+.saved {
+  display: block;
+padding-bottom: 500px;
+  border-top: 3px solid blue;
+
+}
+
+.container {
+  width: 100%;
+  border: solid 1px red;
+} */
+
+
+/* .container {
+    width: 100%;
+    border: solid 1px black;
+    border: solid 1px red;
+}
+
+.right {
+  width:40%;
+  float: right;
+  display: inline;
+  border: solid 1px blue;
+}
+
+.left {
+  width:40%;
+  float:left;
+  display: inline;
+  border: solid 1px red;
+} */
+
+/*
+hr{
+  width:100%
+}
+
+textarea{
+  padding:20px;
+  border:1px solid #222
+}
+
+textarea:focus{
+  border:1px solid #ff0;
+  outline:0
+}
+
+.container{
+  max-width:960px;margin:0 auto
+}
+
+.note,textarea{
+  width:48.916667%;
+  min-height:100px;
+  float:left
+}
+
+.note-preview .note,.note:nth-of-type(even){
+  margin-left:2.0833333333333332%
+}
+
+.note{
+  overflow:hidden;
+  background:rgba(225,225,225,.05);
+  margin-bottom:20px;
+  padding:20px
+}
+
+.note-actions{
+  float:right
+}
+
+button{
+  background:#222;
+  color:#fff;
+  padding:5px;
+  border:1px solid #fff
+} */
