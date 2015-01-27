@@ -1,13 +1,21 @@
+
 <div class="container">
+  <div class="message-queue">
+    {{message-queue}}
+  </div>
+  <section class="half">
   <div class="input">
     {{textarea placeholder="Add a title!" value=noteTitle rows="2" cols="8"}}
     {{textarea placeholder="Add a note!" value=noteCopy rows="8" cols="40"}}
     <button {{action 'newNote'}}>Add a note</button>
   </div>
+</section>
 
+<section class="half">
   <div class="output">
     {{noteCopy}}
   </div>
+</section>
 
 
 

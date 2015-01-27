@@ -9,7 +9,18 @@ html, body {
 /*   color:#fff; */
 /*   font-family: "Open Sans"; */
 }
-/* 
+
+.half {
+  width: 50%;
+  float: left;
+}
+
+.container {
+  max-width: 960px;
+  overflow: hidden;
+  margin: 0 auto; 
+}
+/*
 .input {
   background-color: white;
   margin: 30px;
