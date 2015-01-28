@@ -4,13 +4,15 @@ export default Ember.ArrayController.extend({
   actions: {
     newNote: function() {
       var body = this.get('noteCopy'),
-      title = this.get('noteTitle');
-      if (body.trim) {
+          title = this.get('noteTitle');
+      if (body) {
         var note = this.store.createRecord('note', { body: body, title: title });
         this.set('noteCopy', '');
+        this.set('noteTitle', '');
         note.save();
-      } else
-      return
+      }
+      // this.set('noteCopy', '');
+      // this.set('noteTitle', '');
     },
 
     deleteNote: function(id) {
@@ -18,7 +20,7 @@ export default Ember.ArrayController.extend({
       self.store.find('note', id).then(function(note){
         note.deleteRecord();
         note.save();
-        self.flashMessage('success', 'Congratulations! Your shit has been deleted.');
+        self.flashMessage('success', 'Congratulations! Your note has been deleted.');
       });
     },
 
@@ -32,6 +34,5 @@ export default Ember.ArrayController.extend({
     formDeleted: function() {
       this.flashMessage('success', 'Congratulations! Your changes have been saved');
     }
-
   }
 });
