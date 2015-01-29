@@ -25,14 +25,10 @@ export default Ember.ArrayController.extend({
     },
 
     deleted: function() {
-      var _this = this;
-
       this.get('note').save().then(function() {
-        _this.formDeleted();
+        this.formDeleted();
       });
     },
-    formDeleted: function() {
-      this.flashMessage('success', 'Congratulations! Your changes have been saved');
-    }
+
   }
 });

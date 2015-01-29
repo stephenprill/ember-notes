@@ -3,30 +3,28 @@
   <div class="message-queue">
     {{message-queue}}
   </div>
-  <section class="half">
-  <div class="input">
-    {{textarea placeholder="Add a title!" value=noteTitle rows="2" cols="8"}}
-    {{textarea placeholder="Add a note!" value=noteCopy rows="8" cols="40"}}
-    <button {{action 'newNote'}}>Add a note</button>
-  </div>
-</section>
+  
+    <section class="half">
+      <div class="input">
+        {{textarea placeholder="Add a title!" value=noteTitle rows="2" cols="8"}}
+        {{textarea placeholder="Add a note!" value=noteCopy rows="8" cols="40"}}
+        <button {{action 'newNote'}}>Add a note</button>
+      </div>
+    </section>
 
-<section class="half">
-  <div class="output">
-    {{noteCopy}}
-  </div>
-</section>
+    <section class="half">
+      <div class="output">
+        {{noteCopy}}
+      </div>
+    </section>
 
-
-
-<!-- <br><br><br><br><br><br><br><br><br> -->
-<div class="saved">
-    <h2>Notes</h2>
-    {{#each}}
-      <li>{{title}}{{body}} <button {{action 'deleteNote' id}}>Delete a note</button></li>
-    {{/each}}
+    <div class="saved">
+        <h2>Notes</h2>
+        {{#each note in model}}
+          <li>{{note.title}}{{note.body}} <button {{action 'deleteNote' note.id}}>Delete a note</button></li>
+        {{/each}}
+    </div>
 </div>
-  </div>
 
 
 {{outlet}}
