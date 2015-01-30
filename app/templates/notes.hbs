@@ -3,7 +3,7 @@
   <div class="message-queue">
     {{message-queue}}
   </div>
-  
+
     <section class="half">
       <div class="input">
         {{textarea placeholder="Add a title!" value=noteTitle rows="2" cols="8"}}
@@ -21,8 +21,10 @@
     <div class="saved">
         <h2>Notes</h2>
         {{#each note in model}}
-          <li>{{note.title}}{{note.body}} <button {{action 'deleteNote' note.id}}>Delete a note</button></li>
+          {{local-note body=note.body title=note.title id=note.id deleteNote="deleteNote"}}
         {{/each}}
+
+
     </div>
 </div>
 

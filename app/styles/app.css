@@ -18,7 +18,11 @@ html, body {
 .container {
   max-width: 960px;
   overflow: hidden;
-  margin: 0 auto; 
+  margin: 0 auto;
+}
+
+.bodytext {
+  text-size: 25px;
 }
 /*
 .input {
