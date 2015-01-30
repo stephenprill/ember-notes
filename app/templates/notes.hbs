@@ -21,10 +21,8 @@
     <div class="saved">
         <h2>Notes</h2>
         {{#each note in model}}
-          {{local-note body=note.body title=note.title id=note.id deleteNote="deleteNote"}}
+          {{local-note note=note deleteNote="deleteNote"}}
         {{/each}}
-
-
     </div>
 </div>
 

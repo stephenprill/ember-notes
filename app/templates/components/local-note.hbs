@@ -1,10 +1,14 @@
 <section class="note-actions">
-   <button {{action "deleteNote" id}}>Delete Note</button>
- </section>
- <div class="bodytext">
-   {{body}}
+   <button {{action "deleteNote" note}}>Delete Note</button>
+</section>
+
+ <div class="titletext">
+   {{note.title}}
  </div>
- 
- {{title}}
+
+ <div class="bodytext">
+   {{note.body}}
+ </div>
+
 
 {{yield}}

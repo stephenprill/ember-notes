@@ -22,7 +22,11 @@ html, body {
 }
 
 .bodytext {
-  text-size: 25px;
+  font-size: 15px;
+}
+
+.titletext {
+  font-size: 25px;
 }
 /*
 .input {
