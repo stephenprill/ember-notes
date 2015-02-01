@@ -3,8 +3,21 @@
 }
 
 html, body {
-  margin: 20px;
-  background: url('/assets/images/bg_woodpanel.jpg');
+  margin: 0 20px 100px 20px;
+  height: 100%;
+}
+
+body {
+  width: inherit;
+  background-image: url('/assets/images/bg_woodpanel.jpg');
+}
+
+textarea {
+  background-image: url('/assets/images/paper_texture.jpg');
+  border-style: none;
+  outline: none;
+}
+
 /*   display: inline; */
 /*   background:#222; */
 /*   color:#fff; */
