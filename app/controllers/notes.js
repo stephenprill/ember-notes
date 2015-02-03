@@ -27,6 +27,5 @@ export default Ember.ArrayController.extend({
         this.formDeleted();
       });
     },
-
   }
 });

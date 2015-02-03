@@ -1,30 +1,33 @@
 
 
-  <div class="message-queue">
-    {{message-queue}}
-  </div>
+{{message-queue}}
 
-    <section class="half">
-      <div class="input">
-        {{textarea placeholder="Add a title!" value=noteTitle rows="2" cols="8"}}
-        {{textarea placeholder="Add a note!" value=noteCopy rows="8" cols="40"}}
-        <button {{action 'newNote'}}>Add a note</button>
-      </div>
-    </section>
+  <div class="section">
+    <div class="column-2">
+      {{input placeholder="Add a title!" value=noteTitle}}
 
-    <section class="half">
-      <div class="output">
-        {{noteCopy}}
-      </div>
-    </section>
-
-    <div class="saved">
-        <h2>Notes</h2>
-        {{#each note in model}}
-          {{local-note note=note deleteNote="deleteNote"}}
-        {{/each}}
+      {{textarea placeholder="Add a note!" value=noteCopy}}
     </div>
 
+    <div class="column-2">
+      <div class="input-preview">
+          {{noteTitle}}
+      </div>
 
+      <div class="textarea-preview">
+        <button class="right-action" {{action 'newNote'}}> Add a note </button>
+        {{noteCopy}}
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="saved-notes">
+      <h2>Saved Notes</h2>
+      {{#each note in model}}
+      {{local-note note=note deleteNote="deleteNote"}}
+      {{/each}}
+    </div>
+  </div>
 
 {{outlet}}
