@@ -31,6 +31,7 @@ input, textarea, .input-preview, .textarea-preview {
 
 .input-preview {
   height: 59px;
+  font-family: 'Lucida Grande';
 }
 
 .right-action {
@@ -56,6 +57,7 @@ textarea:focus, input:focus {
 
 .note,textarea, .textarea-preview{
   min-height:100px;
+  font-family: 'Lucida Grande';
 }
 
 .notze {
@@ -80,6 +82,7 @@ textarea:focus, input:focus {
   background: white;
   border: solid 2px black;
   width: 97%;
+  background-image: url('/assets/images/paper_texture.jpg');
 }
 
 .note-actions{
@@ -107,4 +110,10 @@ button{
 
 header h1 {
   float:left;
+}
+
+h2 {
+  font-family: 'Lucida Grande';
+  text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px white;
+  font-size: 34px;
 }

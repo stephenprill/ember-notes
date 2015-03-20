@@ -15,7 +15,7 @@
       </div>
 
       <div class="textarea-preview">
-        <button class="right-action" {{action 'newNote'}}> Add a note </button>
+        <button class="right-action" {{action 'newNote'}}> Add a note</button>
         {{noteCopy}}
       </div>
     </div>
@@ -23,7 +23,7 @@
 
   <div class="section">
     <div class="saved-notes">
-      <h2>Saved Notes</h2>
+      <h2>SAVED NOTES</h2>
       {{#each note in model}}
       {{local-note note=note deleteNote="deleteNote"}}
       {{/each}}
