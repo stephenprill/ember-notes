@@ -1,7 +1,8 @@
-# Notes
+# Local Notes
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+	Ember CLI fronted and Rails API backend and allows you to store local notes on your computer. 
+
+Heroku URL: https://blooming-stream-7498.herokuapp.com/notes
 
 ## Prerequisites
 
