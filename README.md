@@ -1,4 +1,4 @@
-# Notes
+# Local Notes
 
 Ember CLI fronted and Rails API backend and allows you to store local notes on your computer.
 
